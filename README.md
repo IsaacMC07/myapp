@@ -1,16 +1,23 @@
-# myapp
+# IMCapp
 
-A new Flutter project.
+Esta app te permite calcular tu Indice de Masa Corporal (de ahí el nombre), 
+solo tienes tu peso y estatura
 
-## Getting Started
+✨ **Características**
+✅ Cálculo preciso de IMC (peso / altura²).
+✅ Interfaz intuitiva y atractiva con diseño moderno.
+✅ Clasificación automática (Bajo peso, Normal, Sobrepeso, Obesidad).
+✅ Consejos de salud personalizados según tu resultado.
+✅ Modo oscuro para mejor visualización.
 
-This project is a starting point for a Flutter application.
+🛠 Tecnologías utilizadas
+Flutter 🎯 (Framework multiplataforma).
 
-A few resources to get you started if this is your first Flutter project:
+Dart 🎨 (Lenguaje de programación).
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+📌 ¿Quieres contribuir?
+¡Las contribuciones son bienvenidas! Si encuentras un error o tienes una mejora, abre un issue o envía un PR.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+¿Te gustó? ¡Dale una ⭐ en GitHub! 😊
+
+
