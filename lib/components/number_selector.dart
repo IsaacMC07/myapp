@@ -1,0 +1,73 @@
+import 'package:flutter/material.dart';
+import 'package:myapp/core/app_color.dart';
+import 'package:myapp/core/text_styles.dart';
+
+class NumberSelector extends StatefulWidget {
+  final String title;
+  final int value;
+  final Function() onIncrement;
+  final Function() onDecrement;
+  //final int value;
+  const NumberSelector({
+    super.key,
+    required this.value,
+    required this.title,
+    required this.onIncrement,
+    required this.onDecrement,
+  });
+
+  @override
+  State<NumberSelector> createState() => _NumberSelectorState();
+}
+
+class _NumberSelectorState extends State<NumberSelector> {
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      decoration: BoxDecoration(
+        color: AppColor.backgroundComponent,
+        borderRadius: BorderRadius.circular(16),
+      ),
+      child: Padding(
+        padding: const EdgeInsets.all(12.0),
+        child: Column(
+          children: [
+            Text(widget.title, style: TextStyles.bodyText),
+            Text(
+              widget.value.toString(),
+              style: TextStyle(
+                color: Colors.white,
+                fontSize: 38,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                FloatingActionButton(
+                  heroTag: null,
+                  onPressed: () {
+                    widget.onDecrement();
+                  },
+                  shape: CircleBorder(),
+                  backgroundColor: AppColor.primary,
+                  child: Icon(Icons.remove, color: Colors.white),
+                ),
+                SizedBox(width: 16),
+                FloatingActionButton(
+                  heroTag: null,
+                  onPressed: () {
+                    widget.onIncrement();
+                  },
+                  shape: CircleBorder(),
+                  backgroundColor: AppColor.accent,
+                  child: Icon(Icons.add, color: Colors.white),
+                ),
+              ],
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
